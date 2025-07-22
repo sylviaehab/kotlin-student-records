@@ -3,6 +3,7 @@ package org.example
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 fun main() {
+    println("this is for the commit")
     val names= listOf("sylvia","ali","ahmed","mona")
     val Scores = mutableMapOf(
         "sylvia" to 85,
@@ -49,8 +50,8 @@ fun Report(scores: Map<String, Int>) {
         println("No student data available.")
         return
     }
-
     scores.filter { it.value >= 60 }
         .map { "${it.key}: ${it.value}" }
         .forEach { println(it) }
+
 }
